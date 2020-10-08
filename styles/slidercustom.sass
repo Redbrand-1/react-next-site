@@ -1,0 +1,163 @@
+.slider_custom_padding_conteiner
+  width: 100%
+  max-width: 1320px
+  min-width: 320px
+  margin-top: 10px
+  margin-bottom: 20px
+  position: relative
+  padding-left: 60px
+  padding-right: 60px
+  .title
+    width: 100%
+    display: flex
+    justify-content: center
+    font-size: 18px
+    color: #00a6ff
+  .prev
+    position: absolute
+    top: 50%
+    left: 0
+    font-size: 60px
+    color: #CDE7F5
+  .next
+    position: absolute
+    top: 50%
+    right: 0
+    font-size: 60px
+    color: #CDE7F5
+  .slick-dots
+    position: absolute
+    top: 0
+    width: 100%
+    max-height: 100px
+    display: flex
+    justify-content: space-between
+    li
+      margin: 5px
+      width: 100px
+      height: 100px
+      img
+        left: 0
+        right: 0
+        width: 100px
+        height: 100px
+        border-radius: 100px
+        box-sizing: border-box
+        border: 3px solid 
+        border-color: #8d8d8d
+    .slick-active
+      border-radius: 100px
+      img
+        border: 3px solid 
+        border-color: #69c0ff
+  .slider_conteiner
+    padding-top: 120px
+    width: 100%
+    min-height: 550px
+    .slider
+      width: 100%
+      .img_cont
+        width: 40%
+        img
+          width: 300px
+          height: 400px
+      .price_cont
+        width: 70%
+        padding: 10px
+        h2
+          padding-top: 20px
+          font-size: 45px
+          line-height: 21px
+          color: #00a6ff
+        .text
+          max-width: 500px
+          line-height: 21px
+          color: #8d8d8d
+          font-size: 16px
+          min-height: 100px
+        .info
+          color: #6e6e6e
+          max-width: 750px
+          font-size: 18px
+          padding: 5px
+          padding-left: 25px
+        .right
+          width: 100%
+          display: flex
+          justify-content: center
+        .info:nth-child(2n-1)
+          background: linear-gradient(90deg, #99CFEB 0%, rgba(153, 207, 235, 0) 100%)
+        .info:nth-child(2n)
+          background: linear-gradient(90deg, #D6D6D6 0%, rgba(214, 214, 214, 0) 100%)
+        .info:nth-child(3n - 1)
+          background: linear-gradient(90deg, #C3EAE2 0%, rgba(195, 234, 226, 0) 100%)
+        .result
+          padding-left: 55px
+          font-size: 24px
+          width: 100%
+          b
+            color: #00a6ff
+        .right_result
+          display: flex
+          justify-content: center
+      .price_right
+        padding-left: 100px
+        width: 60%
+@media ( max-width: 900px )
+  .slider_custom_padding_conteiner
+    .slider_conteiner
+      .slider
+        .img_cont
+          width: 100%
+        .price_cont
+          h2
+            font-size: 35px
+          .result
+            font-size: 22px
+            padding: 0px
+            display: flex
+            justify-content: center
+        .price_right
+          padding-left: 0px
+@media ( max-width: 770px )
+  .slider_custom_padding_conteiner
+    .slider_conteiner
+      min-height: 940px
+      .slider
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .price_cont
+          width: 100%
+          order: 2
+          h2
+            display:  flex
+            justify-content: center
+            text-align: center
+            font-size: 30px
+          .result
+            padding: 0px
+          .text
+            padding-left: 10px
+        .price_right
+          padding: 0px
+          margin: 0
+          justify-content: flex-start
+@media ( max-width: 561px )
+  .slider_custom_padding_conteiner
+    margin: 0
+    padding: 0
+    .slider_conteiner
+      padding-top: 80px
+    .slick-dots
+      width: 100%
+      max-height: 60px
+      li
+        margin: 5px
+        width: 80px
+        height: 80px
+        img
+          width: 60px
+          height: 60px
+          border-radius: 100px
+          border: 2px solid

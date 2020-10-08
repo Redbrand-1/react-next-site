@@ -1,0 +1,1 @@
+export const  UrlServer: string  = 'https://perm-remont-okon.ru' //https://perm-remont-okon.ru

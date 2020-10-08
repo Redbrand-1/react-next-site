@@ -1,0 +1,64 @@
+.info_comp_furnitura_conteiner
+  width: 100%
+  min-width: 320px
+  padding-left: 10px
+  padding-right: 10px 
+  max-width: 1200px
+  border-top: 1px solid #41414121
+  .img_conteiner
+    width: 400px
+    img
+      width: 400px
+      height: 300px
+  .info_conteiner
+    width: 100%
+    height: 100%
+    .title_conteiner
+      h2
+        width: 100%
+        max-width: 300px
+        font-size: 30px
+        color: #5FC4F9
+        margin: 0
+        text-align: center
+      .img_cont
+        width: 100%
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        .img_1
+          width: 140px
+          height: 70px
+          padding: 10px
+        .img_2
+          width: 180px
+          height: 70px
+          padding: 10px
+    .text
+      width: 100%
+      font-size: 18px
+      min-height: 220px
+      color: #555555
+@media ( max-width: 850px )
+  .info_comp_furnitura_conteiner
+    flex-direction: column
+    .info_conteiner
+      order: 2
+      width: 100%
+    .img_conteiner
+      order: 1
+      width: 100%
+      justify-content: center
+@media ( max-width: 450px )
+  .info_comp_furnitura_conteiner
+    .info_conteiner
+      .title_conteiner
+        justify-content: center 
+        h2
+          justify-content: center 
+    .img_conteiner
+      width: 320px
+      img
+        width: 320px
+        height: 220px
+    

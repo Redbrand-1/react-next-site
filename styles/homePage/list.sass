@@ -1,0 +1,96 @@
+.list_home_conteiner:nth-child(2n - 1)
+  border-bottom: #e2e2e2 1px solid
+  border-top: #e2e2e2 1px solid
+.list_home_conteiner:nth-child(3n -2)
+  background: #c3eae21f
+.list_home_conteiner:nth-child(3n - 1)
+  background: #d6d6d60c
+.list_home_conteiner:nth-child(3n)
+  background: #188fff07 
+.list_home_conteiner
+  display: flex
+  width: 100%
+  min-width: 300px
+  max-width: 2700px
+  .list_price_cont
+    width: 65%
+    h2
+      width: 100%
+      max-width: 700px
+      text-align: center
+      color:#07a7fd
+      font-size: 30px
+      margin: 0
+    .text
+      width: 100%
+      max-width: 700px
+      text-align: center
+      font-size: 16px
+    .price_cont
+      max-width: 1200px
+      width: 100%
+      margin-bottom: 5px
+      div
+        width: 100%
+        max-width: 700px
+        margin: 0
+        padding-left: 10px
+        padding-right: 10px
+        font-size: 16px
+        height: 100%
+        p
+          margin: 0
+          color: #181818
+          padding-left: 10px
+          padding-right: 10px
+        b
+          min-width: 120px
+          color: #00000096
+          text-align: center
+    .price_cont:nth-child(3n -2)
+      background: #C3EAE2
+    .price_cont:nth-child(3n - 1)
+      background: #D6D6D6
+    .price_cont:nth-child(3n)
+      background: #99CFEB 
+
+  .list_img_cont
+    width: 30%
+    justify-content: center
+    align-items: center
+    min-width: 320px
+    padding-top: 10px
+    padding-bottom: 10px
+    img
+      border: #e2e2e2 1px solid
+      width: 300px
+      height: auto
+      height: 300px
+      border-radius: 10%
+      box-sizing: border-box
+@media ( max-width: 800px )
+  .list_home_conteiner
+    flex-direction: column
+    .list_price_cont
+      width: 100%
+      padding: 0
+      order: 2
+      .price_cont
+        padding: 0
+        div
+          padding-right: 20px
+    .list_img_cont
+      width: 100%
+      min-width: 320px
+      height: 320px
+      display: flex
+      justify-content: center
+      order: 1
+      margin-top: 10px
+      margin-bottom: 10px
+      img
+        display: flex
+        justify-content: center
+        width: 100%
+        max-width: 320px
+        height: 320px
